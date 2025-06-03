@@ -1,0 +1,289 @@
+@media  screen  and (max-width:900px) {
+
+    nav {
+        display: none;
+        transition: all 0.4s ease;
+    }
+
+    header{
+        height: 20px;
+    }
+     
+    .first-section{
+        height: 70%;
+        margin-bottom: 30px;
+    }
+
+    .first-section .container {
+        padding-top: 0;
+    }
+    .first-section .container .highlight-fs{
+        font-size: 3.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .highlight-fs::first-letter{
+        font-size: 4.2rem;
+    }
+
+    .p-fs{
+        font-size: 1rem;
+        width: 100%;
+    }
+
+     /* ------------------------------------------------------- */
+    /* About Section */
+
+    #about  {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    #about .about-logo .about-a{
+        font-size: 2.5rem;
+    }
+
+    #about .bg-vert{
+        flex: 1;
+        width: 100%;
+
+    }
+    #about .about-details{
+        flex: 1;
+    }
+    .about-details .about-title {
+        font-size: 2.5rem;
+        padding-bottom: 10px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .about-details .about-p {
+        font-size: 1rem;
+    }
+
+    
+    .about-logo .about-img{
+        width: 180px;
+        margin-top: 10px;
+    }
+
+     /* ------------------------------------------------------- */
+    /* Services section */
+
+    #services{
+        border-radius: 100px 0 50px 0;
+        height: auto;
+        background-image: url(../assets/img/pexels-brett-sayles-2425567.jpg);
+        background-size: cover;
+    }
+
+    #services .container-blur{
+        border-radius: 100px 0 50px 0;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #services .container-blur .services-title{
+        font-size: 2.5rem;
+        width: 60%;
+        padding-top: 15px;
+        text-align: center;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+    
+    #services .services-container{
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+    #services .services-container .box{
+        width:70% ;
+    }
+    #services .services-container .box .box-img{
+        height: 80px;
+        width: 80px;
+    }
+
+    #services .services-container .box .box-name{
+        font-size: 1rem;
+    }
+
+
+    #services .services-container .box .box-details{
+       display: none;
+    }
+
+    #services .services-container .box .details{
+        width: 80%;
+        padding: 20px 0;
+    }
+
+     /* ------------------------------------------------------- */
+    /* Contacts section */
+    #contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    #contacts .contacts-container{
+        width: 70%;
+    
+    }
+
+    #contacts .contacts-title{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #contacts .contacts-title span{
+        font-size: 3rem;
+    }
+
+    .contacts-container .btn-container{
+        height: 400px;
+        height: 95%;
+        border-radius: 80px 80px 0 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .contacts-container .btn-container button{
+        font-size: 1.2rem;
+        width: 70%;
+    }
+
+    .networks{
+        margin-bottom: 50px;
+    }
+    .networks .banner{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 0;
+        
+    }
+
+    .networks .banner li{
+        height: fit-content;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        padding: 5px 5px;
+        width: 100px;
+        
+    }
+
+    .networks .banner li a{
+        font-size: 0.9rem;
+    }
+
+    .networks .banner li img{
+        width: 2rem;
+
+    }
+
+    .networks .banner li:hover{
+        transition: all 0.4s ease;
+        background-color: var(--color-vert-clair);
+        backdrop-filter: blur(20px);
+        box-shadow:  0 8px 30px 0 rgba(0, 0, 0, 0.221);
+        border-radius: 10px;
+    }
+     /* ------------------------------------------------------- */
+    /* FOOTER */
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        height: 400px;
+        gap: 20px;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 40px;
+        padding-top: 10px
+    }
+
+    footer .footer-box{
+        width: 40%;
+        margin: 0;
+        flex-wrap: wrap;
+        height: 180px;
+        border: 1px solid transparent;
+        padding-left: 20px;  
+        justify-content: center;     
+    }
+    footer .footer-box a{
+        font-size: 0.8rem;
+    }
+
+    footer .footer-box h3{
+        font-size: 1rem;
+    }
+
+    /* ------------------------------------------------------- */
+    /* MENU HAMBURGER */
+
+    .menu-hamburger{
+        display: flex;
+    }
+
+    .menu-open, .menu-close {
+        width: 1.8rem;
+        height: 2rem;
+        cursor: pointer;
+        display: none;
+        transition: all 0.4s ease;
+    }
+
+    .displayed{
+        display: block;
+        transition: all 0.4s ease;
+    }
+
+    header {
+        padding: 15px 20px;
+    }
+
+    .on-phone{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 100;
+        background-color: rgba(255, 255, 255, 0.416);
+        right: 0;
+        top: 0;
+        backdrop-filter: blur(20px);
+        gap: 50px;
+        margin-top: 49px ;
+        padding-top: 100px;
+        transition: all 0.3s ease;
+
+    }
+
+    nav .navlinks a{
+        font-size: 1.5rem;
+    }
+
+
+    /* ------------------------------------------------------- */
+
+}

@@ -1,0 +1,542 @@
+
+:root{
+    --color-vert-clair : #00ffd4;
+    --color-vert-fonce : #142a21;
+    --color-vert : #005849;
+
+}
+
+*{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+
+}
+ /* ------------------------------------------------------- */
+
+/* HEADER */
+
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 25px;
+    padding: 20px 50px;
+}
+
+.menu-hamburger{
+    display: none;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.logo .img-logo {
+    width: 1.5rem;
+}
+
+.logo .p-logo{
+    font-weight: 800;
+    font-size: 1.5rem;
+    cursor: default;
+    color: var(--color-vert-fonce);
+}
+
+.logo .p-logo span{
+    color: var(--color-vert-clair);
+    font-size: 2rem;
+}
+
+nav {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .navlinks a{
+    color: var(--color-vert-fonce);
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+}
+
+
+.navlinks:hover a {
+    padding: 8px 20px;
+    background-color: var(--color-vert-fonce);
+    color: var(--color-vert-clair);
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+ /* ------------------------------------------------------- */
+
+/* first section */
+
+main .first-section {
+    background-image: url(../assets/img/pexels-brett-sayles-4425157.jpg);
+    background-size: cover;
+    height: 80vh;
+    color: white;
+}
+
+.glass-effect{
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(20px);
+   
+
+}
+
+.first-section .container {
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+ .first-section .container .highlight-fs{
+    font-size: 6rem;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.highlight-fs::first-letter {
+    color: var(--color-vert-clair);
+    font-size: 8rem;  
+}
+
+.highlight-fs span {
+    color: var(--color-vert-clair);
+}
+
+.p-fs {
+    width: 800px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+ .btn{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: var(--color-vert-fonce);  
+    background-color: white ;
+    border-radius: 30px;
+    border : none;
+    width: 300px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    margin: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-container {
+    border-radius: 30px;
+    border : 2px solid white;
+    padding: 2px;
+    transition: all 0.3s ease;
+}
+
+ .btn:hover {
+    background-color: var(--color-vert-fonce);
+    color: var(--color-vert-clair);
+    transition: all 0.3s ease;
+}
+
+
+
+.container .btn-container:hover {
+    border : 2px solid var(--color-vert-clair);
+    transition: all 0.3s ease;
+    background-color: var(--color-vert-fonce);
+}
+
+ /* ------------------------------------------------------- */
+
+
+/* ABOUT SECTION*/
+/* Cette page a été crée par Amédée G. LOUBAKI */
+#about {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px 50px;
+}
+
+#about .bg-vert {
+    height: 80%;
+    flex: 2;
+}
+
+.glass {
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(20px);
+    box-shadow:  0 8px 30px 0 rgba(0, 0, 0, 0.221);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 32px;
+    transition: all 0.4s ease;
+}
+
+#about .bg-vert .about-logo {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+
+}
+
+.about-logo .about-img {
+    width: 200px;
+}
+
+.about-logo .about-a{
+    font-size : 3.5rem;
+    font-weight: 800;
+    cursor: default;
+    color: var(--color-vert-fonce)
+}
+
+.about-logo .about-a span {
+    color: var(--color-vert-clair);
+    font-size: 3rem;
+}
+
+#about .about-logo:hover {
+    transition: all 0.4s ease;
+    transform: rotate(-8deg);
+   
+}
+
+#about .about-details {
+    flex: 4;
+    height : 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-details .about-title {
+    font-size: 3.5rem;
+    color: var(--color-vert-fonce);
+    width: 100%;
+    border-bottom: 2px solid var(--color-vert-fonce);
+    text-align: center;
+    padding: 0 0 20px 20px;
+    margin-top: 0;
+    
+}
+
+.about-details .about-p {
+    color: var(--color-vert-fonce);
+    font-size: 1.2rem;
+}
+ /* ------------------------------------------------------- */
+
+
+/* SECTION SERVICES */
+
+#services {
+    background-image: url(../assets/img/pexels-brett-sayles-4425157.jpg);
+    background-size: cover;  
+    backdrop-filter: blur(20px);
+    border-radius: 200px 0 100px 0;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#services .container-blur{
+    height: 100%;
+    width: 100%;
+    border-radius: 200px 0 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.135);
+
+}
+
+#services .container-blur .services-title{
+    font-size: 3.5rem;
+    color: white;
+    width: 50%;
+    border-bottom: 2px solid white;
+    text-align: center;
+    padding: 0 0 20px 20px;
+    margin-top: 0;
+}
+
+
+
+#services .services-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    height: 55%;
+    width: 90%;
+    padding: 20px 50px ;
+
+}
+
+
+#services .services-container .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 0;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    border-bottom: none;
+
+    box-shadow:  0 8px 30px 0 rgba(0, 0, 0, 0.753);
+   
+} 
+
+
+#services .services-container .box .box-img{
+    width: 100px;
+    height: 100px;
+    padding: 10px 0;
+ 
+}
+
+#services .services-container .box .details {
+    background-color: var(--color-vert-clair);
+    color: var(--color-vert-fonceS);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px 32px 0 0;
+    box-shadow:  0 8px 30px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+
+#services .services-container .box .box-name{
+    font-weight: 800;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0; 
+}
+
+#services .services-container .box .box-details{
+    width: 280px;
+    text-align: center;
+}
+
+
+#services .services-container .box:hover  {
+   transition: all 0.3s ease;
+}
+
+
+#services .services-container .box:hover .details{
+    transition: all 0.3s ease;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+ /* ------------------------------------------------------- */
+
+ 
+/* contacts section */
+
+#contacts{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    padding-bottom: 60px;
+    margin-top: 40px;
+
+}
+
+#contacts .contacts-container{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    padding-bottom: 0;
+}
+#contacts .contacts-title{
+    font-size: 4rem;
+    color: var(--color-vert-fonce);
+    text-align: center;
+    padding: 0 0 20px 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#contacts .contacts-title span{
+    color: var(--color-vert-clair);
+    font-size: 5rem;
+}
+
+.contacts-container .btn-container{
+   width: 90%;
+   height: 450px;
+   background-color: var(--color-vert-fonce);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 120px 120px 0 0;
+   border-bottom: none;
+}
+
+.contacts-container .btn-container button {
+    height: 70px;
+    border-radius: 32px;
+    font-size: 1.5rem;
+    border-radius:  100px 100px 40px 40px;
+    letter-spacing: normal;
+    
+}
+
+.contacts-container .btn-container button:hover {
+    background-color: var(--color-vert-clair);
+    color: var(--color-vert-fonce);
+    width: 60%;
+    transition: all 0.4s ease;
+    border-radius:  40px 40px 100px 100px;
+    height: 100px;
+}
+
+.networks {
+    width: 100%;
+    height: 80px;
+    margin: 25px 0;
+}
+
+.networks .banner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.networks .banner li a{
+    color: var(--color-vert-fonce);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.networks .banner li img {
+    width: 1rem;
+    color: var(--color-vert-fonce);
+}
+
+.networks .banner li{
+    height: 90%;
+    width: 150px;
+    padding: 2px 10px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+
+
+
+.networks .banner li:hover{
+    transition: all 0.4s ease;
+    background-color: var(--color-vert-clair);
+    backdrop-filter: blur(20px);
+    box-shadow:  0 8px 30px 0 rgba(0, 0, 0, 0.221);
+    border-radius: 32px;
+}
+
+/* ---------------------------------------------------- */
+/* FOOTER */
+
+footer{
+    background-color: var(--color-vert-fonce);
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    padding-bottom: 60px;
+
+
+}
+
+footer .footer-box {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 70%;
+}
+
+.footer-box h3{
+    font-weight: 500;
+}
+
+.footer-box a {
+    color: white;
+    font-size: 1rem;
+    font-weight: lighter;
+}
