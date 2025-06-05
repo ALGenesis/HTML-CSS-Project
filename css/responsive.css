@@ -38,10 +38,12 @@
     #about  {
         display: flex;
         flex-direction: column;
-        margin: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         justify-content: center;
         align-items: center;
         height: auto;
+        width: 80vw;
     }
 
     #about .about-logo .about-a{
