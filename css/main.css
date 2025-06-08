@@ -4,6 +4,9 @@
     --color-vert-fonce : #142a21;
     --color-vert : #005849;
 
+    --bg-01-url : url(../assets/img/bg-01.webp);
+    --bg-02-url : url(../assets/img/bg-02.webp)
+
 }
 
 *{
@@ -90,7 +93,7 @@ nav .navlinks a{
 /* first section */
 
 main .first-section {
-    background-image: url(../assets/img/pexels-brett-sayles-4425157.jpg);
+    background-image: var(--bg-01-url);
     background-size: cover;
     height: 80vh;
     color: white;
@@ -267,7 +270,7 @@ main .first-section {
 /* SECTION SERVICES */
 
 #services {
-    background-image: url(../assets/img/pexels-brett-sayles-4425157.jpg);
+    background-image: var(--bg-02-url);
     background-size: cover;  
 
     border-radius: 200px 0 100px 0;
