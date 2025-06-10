@@ -4,6 +4,9 @@
     --color-vert-fonce : #142a21;
     --color-vert : #005849;
 
+    --bg-01-url : url(../assets/img/bg-01.webp);
+    --bg-02-url : url(../assets/img/bg-02.webp)
+
 }
 
 *{
@@ -90,7 +93,7 @@ nav .navlinks a{
 /* first section */
 
 main .first-section {
-    background-image: url(../assets/img/pexels-brett-sayles-4425157.jpg);
+    background-image: var(--bg-01-url);
     background-size: cover;
     height: 80vh;
     color: white;
@@ -99,7 +102,7 @@ main .first-section {
 .glass-effect{
     background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
     backdrop-filter: blur(20px);
-   
+    -webkit-backdrop-filter: blur(20px);
 
 }
 
@@ -267,9 +270,9 @@ main .first-section {
 /* SECTION SERVICES */
 
 #services {
-    background-image: url(../assets/img/pexels-brett-sayles-4425157.jpg);
+    background-image: var(--bg-02-url);
     background-size: cover;  
-    backdrop-filter: blur(20px);
+
     border-radius: 200px 0 100px 0;
     height: 550px;
     display: flex;
@@ -288,6 +291,7 @@ main .first-section {
     flex-direction: column;
     gap: 15px;
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     background-color: rgba(255, 255, 255, 0.135);
 
 }
@@ -502,6 +506,7 @@ main .first-section {
     transition: all 0.4s ease;
     background-color: var(--color-vert-clair);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     box-shadow:  0 8px 30px 0 rgba(0, 0, 0, 0.221);
     border-radius: 32px;
 }
